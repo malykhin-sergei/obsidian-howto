@@ -1,0 +1,102 @@
+{
+  "main": {
+    "id": "2c02f2b0c9fc5dc6",
+    "type": "split",
+    "children": [
+      {
+        "id": "18ac858d651f7877",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Разметка/Таблицы.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ccbe2995b946bd4c",
+    "type": "split",
+    "children": [
+      {
+        "id": "a62b586b1ade65ce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c3f98f6853e49275",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "5e3bc7816dafbfa6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "#latex",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "716605ae87909d12",
+    "type": "split",
+    "children": [
+      {
+        "id": "ddda445fbb8a2a33",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "db9a62f439fde8ce",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Разметка/Таблицы.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "18ac858d651f7877",
+  "lastOpenFiles": [
+    "Разметка/Таблицы.md",
+    "Разметка/Markdown.md",
+    "Attachments/0x2200005.png",
+    "README.md",
+    "Разметка/Встраивание.md",
+    "HOWTO/Старт.md",
+    "HOWTO/Ментальная карта.md",
+    "Attachments/commands.png",
+    "Untitled.md",
+    "Разметка/Embedding.md"
+  ]
+}
