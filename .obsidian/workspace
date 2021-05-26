@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "Разметка/Таблицы.md",
-            "mode": "preview"
+            "mode": "source"
           }
         }
       }
@@ -89,12 +89,12 @@
   "active": "18ac858d651f7877",
   "lastOpenFiles": [
     "Разметка/Таблицы.md",
-    "Разметка/Markdown.md",
-    "Attachments/0x2200005.png",
-    "README.md",
     "Разметка/Встраивание.md",
     "HOWTO/Старт.md",
     "HOWTO/Ментальная карта.md",
+    "Разметка/Markdown.md",
+    "README.md",
+    "Attachments/0x2200005.png",
     "Attachments/commands.png",
     "Untitled.md",
     "Разметка/Embedding.md"
