@@ -85,31 +85,39 @@
 > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
 > id sem consectetuer libero luctus adipiscing.
 
-Или ленивым способом, когда знак `>` ставится перед каждым элементом цитаты, будь то абзац, заголовок или пустая строка:
-
-> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
->
-> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-id sem consectetuer libero luctus adipiscing.
-
 В цитаты можно помещать всё что угодно, в том числе вложенные цитаты:
 
-> ## This is a header.
+> ## Заголовок
 >
-> 1.   This is the first list item.
-> 2.   This is the second list item.
+> 1. первый
+> 2. второй
 >
 > > Вложенная цитата.
 >
-> Here's some example code:
+> Пример кода:
 >
+>     ```shell
 >     return shell_exec("echo $input | $markdown_script");
+>     ```
+
+##  Выноски (callouts)
+
+> [!abstract] Аннотация
+> Аннотация к тексту.
+
+> [!INFO] Справка
+> Это блок информации к размышлению.
+
+Выноски могут быть сворачиваемыми.
+
+>[!quote]- А.С. Пушкин
+> «Я памятник себе воздвиг нерукотворный...»
+
+На ваш выбор есть следующие типы выноски: `note`, `abstract|summary|tldr`, `info`, `todo`, `tip|hint|important`, `success|check|done`, `question|help|faq`, `warning|caution|attention`, `failure|fail|missing`, `danger|error`, `bug`, `example`, `quote|cite`
 
 ## Горизонтальная черта
 
-Cоздается тремя звездочками или тремя дефисами.
+Создается тремя звездочками или тремя дефисами.
 
 ***
 
@@ -121,12 +129,14 @@ $$
         \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})},
          \quad\quad \text{for $|q| < 1$}.
 $$
-При записи формул используется язык $\LaTeX$.  Формулы можно нарисовать в [онлайн-редакторе](https://www.hostmath.com/).
+В них используется язык $\LaTeX$[^latex]. Формулы можно нарисовать в [онлайн-редакторе](https://www.hostmath.com/) или написать по образцу из [[Примеры формул]].
 
 Химические реакции и формулы
 $$
 \ce{Hg^2+ ->[I-]  $\underset{\mathrm{red}}{\ce{HgI2}}$  ->[I-] $\underset{\mathrm{red}}{\ce{[Hg^{II}I4]^2-}}$}
 $$
+
+[^latex]: Подробнее о LaTeX смотри [онлайн-книгу.](https://en.wikibooks.org/wiki/LaTeX/Mathematics).
 
 ## Таблицы
 
@@ -152,7 +162,7 @@ Content Cell  | Content Cell
 
 Внутри таблиц можно использовать ссылки, наклонный, жирный или зачеркнутый текст.
 
-## Комментарии
+## Комментарии к разметке Markdown
 
 %%
 Текст комментария
@@ -169,35 +179,20 @@ Content Cell  | Content Cell
 ```
 
 ## Исходный код
-
 Cтавим по три апострофа (на букве Ё) до и после кода. Также можно указать язык исходного кода.
-
-```html
-<nav class="nav nav-primary">
-  <ul>
-    <li class="tab-conversation active">
-      <a href="#" data-role="post-count" class="publisher-nav-color" data-nav="conversation">
-        <span class="comment-count">0 комментариев</span>
-        <span class="comment-count-placeholder">Комментарии</span>
-      </a>
-    </li>
-    <li class="dropdown user-menu" data-role="logout">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <span class="dropdown-toggle-wrapper">
-          <span>
-            Войти
-          </span>
-        </span>
-        <span class="caret"></span>
-      </a>
-    </li>
-  </ul>
-</nav>
+```c
+/* This structure is used by main to communicate with parse_opt. */
+struct arguments
+{
+  char *args[2];            /* ARG1 and ARG2 */
+  int verbose;              /* The -v flag */
+  char *outfile;            /* Argument for -o */
+  char *string1, *string2;  /* Arguments for -a and -b */
+};
 ```
-
 В коде не нужно заменять угловые скобки `< >` и амперсанд `&` на их html-сущности.
 
-## Инлайн код
+## Код в строке
 
 Для вставки кода внутри предложений нужно заключать этот код в апострофы (на букве Ё). Пример: `<html class="ie no-js">`.
 
@@ -212,11 +207,6 @@ Cтавим по три апострофа (на букве Ё) до и посл
  - Ссылка на определенную секцию: [[README#Добавление материалов в базу]]
 
 ## Картинки
-
-Картинка
-
-![[mgo-cubik.png]]
-
 Картинка с заданным размером (50 пикселей в ширину):
 
 ![[nanoparticle.png|50]]
